@@ -1,0 +1,192 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Quicksand:wght@300;400;600&display=swap');
+
+/*
+header {
+    background-color: rgba(0, 0, 0, 0.363);
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+*/
+
+header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    color: #fff;
+}
+
+header .navbar {
+    border-bottom: 1px solid #fff;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.section-title, header h1 {
+    font-family: 'Lora', serif;
+    letter-spacing: .2rem;
+}
+
+.traco-inferior {
+    content: "";
+    height: 2px;
+    width: 4rem;
+    background-color: #000;
+}
+
+.header-social {
+    color: #fff;
+}
+
+.header-buttons {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-toggler:focus {
+    border: none;
+}
+
+.nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.nav .nav-item .nav-link.active {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.home-background-img {
+    width: 100%;
+    max-height: 100vh;
+    min-height: 37em;
+}
+
+.banner-chamada {
+    color: #fff;
+    letter-spacing: .2rem;
+}
+
+.conheca {
+    bottom: 1rem;
+    color: #fff;
+}
+
+.nav-cardapio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#gastronomia .row {
+    position: relative;
+}
+
+.nav-cardapio .nav-link {
+    color: #000;
+    padding: .1rem 1rem .1rem;
+    border-right: 2px solid rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-cardapio .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000;
+}
+
+.card-contato {
+    max-width: 980px;
+    background-color: rgb(19,19,19);
+    color: #fff;
+}
+
+.contato-buttons {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 0;
+}
+
+.contato-buttons:hover {
+    border: 1px solid #fff;
+}
+
+#gastronomia {
+    background-color: #efece4;
+}
+
+#contato {
+    background-color: rgb(19,19,19);
+}
+
+#eventos {
+    background-color: #f2e4a098;
+}
+
+#a-pousada,
+#hospedagem,
+#gastronomia,
+#experiencias,
+#eventos,
+#contato {
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
+
+
+@media (max-width: 640px) {
+    header .navbar {
+        border-bottom: none;
+    }
+
+    #menu-navegacao ul {
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    #gastronomia .row {
+        position: static;
+    }
+
+    .nav-cardapio {
+        position: static;
+        justify-content: center;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .nav-cardapio .nav-link {
+        margin-bottom: .3rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    header .navbar {
+        border-bottom: none;
+    }
+
+    #gastronomia .row {
+        position: static;
+    }
+
+    .nav-cardapio {
+        position: static;
+        margin-top: 4rem;
+    }
+
+    .nav-cardapio .nav-link {
+        margin-bottom: .3rem;
+    }
+}
+
