@@ -36,6 +36,10 @@ body {
     letter-spacing: .2rem;
 }
 
+h6 {
+    font-family: 'Lora', serif;
+}
+
 .traco-inferior {
     content: "";
     height: 2px;
@@ -84,24 +88,56 @@ body {
     color: #fff;
 }
 
-.nav-cardapio {
+.efeito-vinheta {
+    filter: brightness(50%);
+    transition: .3s;
+}
+
+.efeito-vinheta:hover {
+    filter: brightness(100%);
+    color: #fff;
+}
+
+.link-experiencias {
+    cursor: pointer;
+}
+
+#hospedagem button {
+    width: 9rem;
+}
+
+.adega-button {
+    width: 12rem;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 40%;
+    right: 20%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: .5rem;
+}
+
+#vinhos-e-cervejas img {
+    width: 75%;
+    height: 75%;
+}
+.item-cardapio {
+    max-width: 15rem;
+    max-height: 16rem;
 }
 
 #gastronomia .row {
     position: relative;
 }
 
-.nav-cardapio .nav-link {
+#gastronomia .nav .nav-link {
     color: #000;
     padding: .1rem 1rem .1rem;
     border-right: 2px solid rgba(0,0,0,.4);
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.nav-cardapio .nav-link.active {
+#gastronomia .nav .nav-link.active {
     background-color: rgba(0, 0, 0, 0.3);
     color: #000;
 }
@@ -155,19 +191,24 @@ body {
         background-color: rgba(0, 0, 0, 0.9);
     }
 
-    #gastronomia .row {
-        position: static;
-    }
-
-    .nav-cardapio {
-        position: static;
+    #gastronomia .nav {
         justify-content: center;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
     }
 
-    .nav-cardapio .nav-link {
-        margin-bottom: .3rem;
+    .adega-button {
+        margin-top: .5rem;
+        position: static;
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, 0.7);
+        width: 10rem;
+        font-size: .8rem;
+        padding: .5rem;
+    }
+
+    #vinhos-e-cervejas img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(90%);
     }
 }
 
@@ -176,17 +217,20 @@ body {
         border-bottom: none;
     }
 
-    #gastronomia .row {
+    .adega-button {
+        margin-top: .5rem;
         position: static;
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        color: rgba(0, 0, 0, 0.7);
+        width: 10rem;
+        font-size: .8rem;
+        padding: .5rem;
     }
 
-    .nav-cardapio {
-        position: static;
-        margin-top: 4rem;
-    }
-
-    .nav-cardapio .nav-link {
-        margin-bottom: .3rem;
+    #vinhos-e-cervejas img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(90%);
     }
 }
 
